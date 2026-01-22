@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Close Referral System - Foy Realty</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #1a365d;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 30px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 25px 40px;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 1.3rem;
+            color: #a0c4e8;
+            font-weight: 400;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .section-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #38a169 0%, #276749 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-right: 18px;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        .section-content {
+            text-align: center;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Image placeholder styling (shows if image not found) */
+        .image-placeholder {
+            background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+            border: 2px dashed #4299e1;
+            border-radius: 12px;
+            padding: 60px 40px;
+            color: #2b6cb0;
+            font-size: 1rem;
+        }
+
+        .image-placeholder .filename {
+            font-weight: 600;
+            font-family: monospace;
+            background: white;
+            padding: 5px 12px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #cbd5e0, transparent);
+            margin: 50px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+            font-size: 1.1rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 50px;
+            font-size: 3em;
+        }
+
+        .footer .brand {
+            color: #38a169;
+            font-weight: 600;
+        }
+
+        /* Print/PDF Optimization */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .section-number {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>FOY REALTY<br><span style="font-size: 0.85em; font-weight: 500;">Post-Close Referral System</span></h1>
+            <p class="subtitle">Turn every closed deal into a referral machine</p>
+        </header>
+
+        <!-- Section 1: How It Works -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            <div class="section-content">
+                <img src="flowchart for post close referral system.png" alt="Post-Close Referral System Flowchart">
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Section 2: What Clients Receive -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <h2 class="section-title">What Your Past Clients Receive</h2>
+            </div>
+            <div class="section-content">
+                <img src="messages for post close referral system.png" alt="Example Automated Messages">
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Section 3: What You See -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2 class="section-title">What You See (Agent Dashboard)</h2>
+            </div>
+            <div class="section-content">
+                <img src="dashboard for post close referral syystem.png" alt="Agent Dashboard View">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span class="brand">Foy Realty</span> | Post-Close Referral System
+        </footer>
+    </div>
+</body>
+</html>
